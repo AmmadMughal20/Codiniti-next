@@ -119,13 +119,13 @@ const Contact = () =>
                     className="text-center mb-16"
                 >
                     <h2 className="text-4xl md:text-5xl font-bold mb-6 text-gray-900">
-                        Let's Start Something{" "}
+                        {`Let's Start Something`}{" "}
                         <span className="bg-gradient-to-r from-orange-500 to-red-500 bg-clip-text text-transparent">
                             Amazing
                         </span>
                     </h2>
                     <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-                        Ready to transform your ideas into reality? Get in touch with us and let's discuss your next project.
+                        {`Ready to transform your ideas into reality? Get in touch with us and let's discuss your next project.`}
                     </p>
                 </motion.div>
 
@@ -202,8 +202,8 @@ const Contact = () =>
                         <div>
                             <h3 className="text-2xl font-bold text-gray-900 mb-6">Get in touch</h3>
                             <p className="text-gray-600 leading-relaxed mb-8">
-                                We're here to help you bring your vision to life. Whether you have a specific project in mind
-                                or just want to explore possibilities, we'd love to hear from you.
+                                {` We're here to help you bring your vision to life. Whether you have a specific project in mind
+                                or just want to explore possibilities, we'd love to hear from you.`}
                             </p>
                         </div>
 
@@ -236,7 +236,7 @@ const Contact = () =>
                         >
                             <h4 className="text-xl font-bold mb-4">Ready to get started?</h4>
                             <p className="mb-6">
-                                Let's schedule a free consultation to discuss your project requirements and explore how we can help.
+                                {`Let's schedule a free consultation to discuss your project requirements and explore how we can help.`}
                             </p>
                             <Button
                                 variant="secondary"

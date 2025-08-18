@@ -27,9 +27,11 @@ const About = () =>
                         </span>
                     </h2>
                     <p className="text-xl text-gray-600 max-w-4xl mx-auto leading-relaxed">
-                        Founded on excellence and innovation, our journey started from our homeland with a vision to transform
+                        {
+                            `Founded on excellence and innovation, our journey started from our homeland with a vision to transform
                         businesses through cutting-edge technology solutions. We've grown to become a trusted partner for
                         companies worldwide, delivering exceptional software solutions that drive growth and success.
+                        `}
                     </p>
                 </motion.div>
 

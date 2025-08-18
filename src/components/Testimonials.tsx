@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import { Star, Quote } from "lucide-react";
+import Image from "next/image";
 
 const Testimonials = () =>
 {
@@ -47,7 +48,7 @@ const Testimonials = () =>
                         What Our Clients Say
                     </h2>
                     <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-                        Don't just take our word for it. Here's what our satisfied clients have to say about our work.
+                        {` Don't just take our word for it. Here's what our satisfied clients have to say about our work.`}
                     </p>
                 </motion.div>
 
@@ -64,9 +65,11 @@ const Testimonials = () =>
                             <Quote className="absolute top-6 right-6 w-8 h-8 text-orange-500/20" />
 
                             <div className="flex items-center mb-6">
-                                <img
+                                <Image
                                     src={testimonial.avatar}
                                     alt={testimonial.name}
+                                    width={100}
+                                    height={100}
                                     className="w-16 h-16 rounded-full object-cover mr-4"
                                 />
                                 <div>
@@ -82,7 +85,7 @@ const Testimonials = () =>
                             </div>
 
                             <p className="text-gray-700 leading-relaxed italic">
-                                "{testimonial.content}"
+                                {`"`}{testimonial.content}{`"`}
                             </p>
                         </motion.div>
                     ))}

@@ -1,6 +1,6 @@
-import { motion } from "framer-motion";
-import { Mail, Phone, MapPin, Github, Linkedin, Twitter, Facebook, Instagram } from "lucide-react";
 import CodinitiLogo from "@/assets/images/codiniti-logo-transparent.png";
+import { motion } from "framer-motion";
+import { Facebook, Instagram, Linkedin, Mail, MapPin, Phone, Twitter } from "lucide-react";
 import Image from "next/image";
 
 const Footer = () =>

@@ -74,7 +74,7 @@ const Projects = () =>
                                 <p className="text-gray-600 mb-4 leading-relaxed">{project.description}</p>
 
                                 <div className="flex flex-wrap gap-2 mb-6">
-                                    {project.bestFor.map((bFor, bForIndex) => (
+                                    {project.bestFor?.map((bFor, bForIndex) => (
                                         <span
                                             key={bForIndex}
                                             className="px-3 py-1 bg-gray-100 text-gray-700 text-sm rounded-full"

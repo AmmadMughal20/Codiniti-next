@@ -63,7 +63,7 @@ const Hero = () =>
 
             ctx.clearRect(0, 0, canvas.width, canvas.height);
 
-            particles.forEach((particle, index) =>
+            particles.forEach((particle) =>
             {
                 // Continuous base movement with smooth sine wave patterns
                 particle.angle += particle.speed;

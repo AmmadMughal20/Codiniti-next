@@ -1,25 +1,24 @@
 'use client'
-import { useEffect, useState } from "react";
-import { motion, useScroll, useSpring } from "framer-motion";
-import { ArrowUp } from "lucide-react";
-import { Button } from "@/components/ui/button";
-import Hero from "@/components/Hero";
 import About from "@/components/About";
+import Contact from "@/components/Contact";
+import Expertise from "@/components/Expertise";
+import Footer from "@/components/Footer";
+import Hero from "@/components/Hero";
+import Navigation from "@/components/Navigation";
+import Projects from "@/components/Projects";
 import Services from "@/components/Services";
 import Stats from "@/components/Stats";
-import Expertise from "@/components/Expertise";
-import Projects from "@/components/Projects";
 import Testimonials from "@/components/Testimonials";
-import Contact from "@/components/Contact";
-import Footer from "@/components/Footer";
-import Navigation from "@/components/Navigation";
-import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
-import { Provider } from "react-redux";
-import { PersistGate } from "redux-persist/integration/react";
-import { store, persistor } from "@/store/store";
-import { TooltipProvider } from "@/components/ui/tooltip";
+import { Button } from "@/components/ui/button";
 import { Toaster as Sonner } from "@/components/ui/sonner";
+import { TooltipProvider } from "@/components/ui/tooltip";
 import FloatingWhatsAppButton from "@/components/WhatsappChat";
+import { persistor } from "@/store/store";
+import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
+import { motion, useScroll, useSpring } from "framer-motion";
+import { ArrowUp } from "lucide-react";
+import { useEffect, useState } from "react";
+import { PersistGate } from "redux-persist/integration/react";
 
 const queryClient = new QueryClient();
 
