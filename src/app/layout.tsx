@@ -83,7 +83,9 @@ export default function RootLayout({
               logo: "https://www.codiniti.com/favicon.ico",
               sameAs: [
                 "https://www.linkedin.com/in/codiniti-company-b443ba280/",
-                "https://twitter.com/codiniti"
+                "https://twitter.com/codiniti",
+                "https://www.facebook.com/profile.php?id=100093846410676",
+                "https://www.instagram.com/codiniti/"
               ]
             }),
           }}
