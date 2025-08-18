@@ -26,7 +26,7 @@ const Footer = () =>
                         viewport={{ once: true }}
                     >
                         <h3 className="text-3xl font-bold bg-gradient-to-r from-orange-500 to-red-500 bg-clip-text text-transparent mb-4">
-                            <Image src={CodinitiLogo} alt="codiniti" style={{ width: '200px' }} width={500} height={500} />
+                            <Image src={CodinitiLogo} alt="Codiniti - Custom Software Development" style={{ width: '200px' }} width={500} height={500} />
                         </h3>
                         <p className="text-gray-300 mb-6 leading-relaxed">
                             Transforming innovative ideas into powerful digital solutions that drive business growth and success.

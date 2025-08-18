@@ -69,7 +69,7 @@ const Navigation = () =>
                         whileHover={{ scale: 1.05 }}
                         className="text-2xl font-bold bg-gradient-to-r from-orange-600 to-red-600 bg-clip-text text-transparent"
                     >
-                        <Image src={isScrolled ? CodinitiLogoDark : CodinitiLogo} alt="Logo" className="h-8 w-auto" width={100} height={100} />
+                        <Image src={isScrolled ? CodinitiLogoDark : CodinitiLogo} alt="Codiniti - Custom Software Development" className="h-8 w-auto" width={100} height={100} />
                     </motion.div>
 
                     {/* Desktop Navigation */}
