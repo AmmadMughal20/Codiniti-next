@@ -4,7 +4,7 @@ import POSImage from '@/assets/images/pos.jpg';
 import Ecommerce from '@/assets/images/e-commerce.jpg';
 import Inventory from '@/assets/images/inventory.jpg';
 import MobileApp from '@/assets/images/mobile-app.jpg';
-import LandingPage from '@/assets/images/LandingPage.jpg';
+import LandingPage from '@/assets/images/landingpage.jpg';
 import WebsiteMaintenence from '@/assets/images/website-maintenance.jpg';
 import CustomDevelopment from '@/assets/images/custom.jpg';
 import { StaticImageData } from 'next/image';
