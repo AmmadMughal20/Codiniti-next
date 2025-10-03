@@ -56,6 +56,11 @@ export const metadata: Metadata = {
     images: ["/opengraph-image.jpg"], // reuse same image
     creator: "@codiniti", // optional
   },
+  viewport: {
+    width: "device-width",
+    initialScale: 1,
+  },
+  themeColor: "#FF5E3A"
 };
 
 export default function RootLayout({
@@ -87,6 +92,22 @@ export default function RootLayout({
                 "https://www.facebook.com/profile.php?id=100093846410676",
                 "https://www.instagram.com/codiniti/"
               ]
+            }),
+          }}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "WebSite",
+              "name": "Codiniti",
+              "url": "https://www.codiniti.com",
+              "potentialAction": {
+                "@type": "SearchAction",
+                "target": "https://www.codiniti.com/?s={search_term_string}",
+                "query-input": "required name=search_term_string"
+              }
             }),
           }}
         />
