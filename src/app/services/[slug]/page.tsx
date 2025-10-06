@@ -1,16 +1,22 @@
-import Image from "next/image";
-import Link from "next/link";
 import { servicesData } from "@/data/servicesData";
+import { Metadata } from "next";
+import Image from "next/image";
 import { notFound } from "next/navigation";
 
-interface Props
+type Params = Promise<{ slug: string }>;
+
+
+interface ServicePageProps
 {
-    params: { slug: string };
+    params: Params;
+    searchParams?: Promise<{ [key: string]: string | string[] | undefined }>
 }
 
-export function generateMetadata({ params }: Props)
+// ✅ Correctly type generateMetadata
+export async function generateMetadata({ params }: ServicePageProps)
 {
-    const service = servicesData.find((s) => s.slug === params.slug);
+    const resolvedParams = await params; // ⚡ await the Promise
+    const service = servicesData.find((s) => s.slug === resolvedParams.slug);
     if (!service) return {};
     return {
         title: `${service.title} | Codiniti`,
@@ -18,9 +24,10 @@ export function generateMetadata({ params }: Props)
     };
 }
 
-export default function ServicePage({ params }: Props)
+export default async function ServicePage({ params }: ServicePageProps)
 {
-    const service = servicesData.find((s) => s.slug === params.slug);
+    const resolvedParams = await params; // ⚡ await the Promise
+    const service = servicesData.find((s) => s.slug === resolvedParams.slug);
     if (!service) return notFound();
 
     return (
