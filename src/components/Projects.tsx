@@ -102,6 +102,12 @@ const Projects = () =>
                                         </Button>
                                     )}
                                 </div>
+                                <Link
+                                    href={`/projects/${project.slug}`}
+                                    className="text-blue-600 font-medium hover:underline"
+                                >
+                                    Learn More →
+                                </Link>
                             </div>
                         </motion.div>
                     ))}

@@ -265,14 +265,13 @@ const Hero = () =>
                             initial={{ opacity: 0, y: 20 }}
                             animate={{ opacity: 1, y: 0 }}
                             transition={{ delay: 0.4, duration: 0.8 }}
-                            className="text-5xl md:text-7xl font-bold mb-6 leading-tight"
+                            className="text-4xl md:text-6xl font-bold mb-6 leading-tight"
                         >
-                            We{" "}
+                            Custom {" "}
                             <span className="bg-gradient-to-r from-orange-400 via-red-400 to-orange-300 bg-clip-text text-transparent">
-                                Innovate
+                                Web & Mobile Apps {" "}
                             </span>
-                            <br />
-                            Digital Solutions
+                            Built for Growth – Hire Expert Developers in Lahore
                         </motion.h1>
 
                         <motion.p
@@ -281,7 +280,7 @@ const Hero = () =>
                             transition={{ delay: 0.6, duration: 0.8 }}
                             className="text-xl md:text-2xl mb-8 text-gray-300 leading-relaxed max-w-2xl"
                         >
-                            Codiniti transforms your vision into powerful digital experiences. We create scalable, modern solutions that drive your business forward in the digital age.
+                            Codiniti helps startups & businesses build scalable software, websites and mobile appications using modern technologies.
                         </motion.p>
 
                         <motion.div
@@ -293,17 +292,17 @@ const Hero = () =>
                             <Button
                                 size="lg"
                                 className="bg-gradient-to-r from-orange-600 to-red-600 hover:from-orange-700 hover:to-red-700 text-white text-lg px-8 py-6 shadow-2xl hover:shadow-orange-500/25 transition-all duration-300 transform hover:scale-105"
-                                onClick={() => document.getElementById("contact")?.scrollIntoView({ behavior: "smooth" })}
+                                onClick={() => window.open("https://wa.me/923394112114?text=Hello%2C%20I%20want%20to%20know%20more%20about%20your%20services.", "_blank")}
                             >
-                                Start Your Project
+                                Get a Free Consultation
                             </Button>
                             <Button
                                 size="lg"
                                 variant="outline"
                                 className="border-2 border-white/60 text-white bg-white/5 hover:bg-white hover:text-gray-900 text-lg px-8 py-6 backdrop-blur-sm transition-all duration-300 transform hover:scale-105"
-                                onClick={() => document.getElementById("services")?.scrollIntoView({ behavior: "smooth" })}
+                                onClick={() => document.getElementById("projects")?.scrollIntoView({ behavior: "smooth" })}
                             >
-                                Explore Services
+                                See Our Projects
                             </Button>
                         </motion.div>
 

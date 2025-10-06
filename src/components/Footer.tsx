@@ -1,3 +1,4 @@
+'use client';
 import CodinitiLogo from "@/assets/images/codiniti-logo-transparent.png";
 import { motion } from "framer-motion";
 import { Facebook, Instagram, Linkedin, Mail, MapPin, Phone, Twitter } from "lucide-react";

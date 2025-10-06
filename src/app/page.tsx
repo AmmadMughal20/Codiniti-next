@@ -17,6 +17,7 @@ import { persistor } from "@/store/store";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { motion, useScroll, useSpring } from "framer-motion";
 import { ArrowUp } from "lucide-react";
+import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
 import { PersistGate } from "redux-persist/integration/react";
 
@@ -31,6 +32,31 @@ const Index = () =>
         damping: 40,
         restDelta: 0.001
     });
+
+    const pathname = usePathname();
+
+    useEffect(() =>
+    {
+        const scrollToHash = () =>
+        {
+            const hash = window.location.hash;
+            if (!hash) return;
+
+            const element = document.querySelector(hash);
+            if (!element) return;
+
+            const navHeight = 64;
+            const offsetTop = element.getBoundingClientRect().top + window.scrollY - navHeight;
+            window.scrollTo({ top: offsetTop, behavior: "smooth" });
+        };
+
+        // Wait a bit to ensure DOM is mounted
+        setTimeout(scrollToHash, 50);
+
+        // Also listen for hash changes (e.g., clicking menu links)
+        window.addEventListener("hashchange", scrollToHash);
+        return () => window.removeEventListener("hashchange", scrollToHash);
+    }, []);
 
     useEffect(() =>
     {
@@ -61,8 +87,6 @@ const Index = () =>
                             style={{ scaleX }}
                         />
 
-                        <Navigation />
-
                         <main>
                             <Hero />
                             <About />
@@ -74,7 +98,6 @@ const Index = () =>
                             <Contact />
                         </main>
 
-                        <Footer />
 
                         {/* Modern Scroll to Top Button */}
                         <motion.div

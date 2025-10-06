@@ -2,6 +2,8 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import { ReduxProvider } from '@/store/Provider'
+import Navigation from "@/components/Navigation";
+import Footer from "@/components/Footer";
 
 
 const geistSans = Geist({
@@ -72,6 +74,8 @@ export default function RootLayout({
   return (
     <html lang="en" dir="ltr">
       <head>
+
+        {/* <!-- Google Tag Manager --> */}
         <script
           dangerouslySetInnerHTML={{
             __html: `(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
@@ -81,6 +85,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 })(window,document,'script','dataLayer','GTM-N8XKQQLV');`
           }}
         />
+        {/* <!-- End Google Tag Manager --> */}
       </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
@@ -96,7 +101,9 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         </noscript>
         {/* <!-- End Google Tag Manager (noscript) --> */}
         <ReduxProvider>
+          <Navigation />
           {children}
+          <Footer />
         </ReduxProvider>
         <script
           type="application/ld+json"
@@ -108,7 +115,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
               url: "https://www.codiniti.com",
               logo: "https://www.codiniti.com/favicon.ico",
               sameAs: [
-                "https://www.linkedin.com/in/codiniti-company-b443ba280/",
+                "https://www.linkedin.com/company/codiniti/",
                 "https://twitter.com/codiniti",
                 "https://www.facebook.com/profile.php?id=100093846410676",
                 "https://www.instagram.com/codiniti/"

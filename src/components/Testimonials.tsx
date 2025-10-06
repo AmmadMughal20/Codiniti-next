@@ -12,25 +12,25 @@ const Testimonials = () =>
 
     const testimonials = [
         {
-            name: "Sarah Johnson",
-            position: "CEO, TechStartup Inc.",
-            content: "Codiniti transformed our vision into reality with exceptional attention to detail and cutting-edge technology. Their team's expertise is unmatched.",
+            name: "Ayesha Khan",
+            position: "Owner, Lahore Boutique",
+            content: "Codiniti helped us digitize our store with an intuitive e-commerce platform. Their team understood our SME needs and delivered a solution that boosted our sales significantly.",
             rating: 5,
-            avatar: "https://images.unsplash.com/photo-1494790108755-2616b612b786?auto=format&fit=crop&q=80&w=150"
+            avatar: "https://images.unsplash.com/photo-1733310925495-0b0c596945bc?q=80&w=1287&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
         },
         {
-            name: "Michael Chen",
-            position: "CTO, DataFlow Solutions",
-            content: "The quality of work and professionalism shown by Codiniti exceeded our expectations. They delivered a robust solution that scaled perfectly with our growth.",
+            name: "Fahad Ahmed",
+            position: "Founder, Karachi Catering Services",
+            content: "Our booking system was outdated and hard to manage. Codiniti developed a custom solution that streamlined our operations and improved client satisfaction immensely.",
             rating: 5,
-            avatar: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&q=80&w=150"
+            avatar: "https://images.unsplash.com/photo-1673830719944-7bf527816dae?q=80&w=1286&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
         },
         {
-            name: "Emily Rodriguez",
-            position: "Product Manager, InnovateCorp",
-            content: "Working with Codiniti was a game-changer for our project. Their innovative approach and technical excellence helped us launch ahead of schedule.",
+            name: "Sana Riaz",
+            position: "Manager, Islamabad Fitness Studio",
+            content: "Codiniti transformed our business by creating a mobile app for class bookings and memberships. Their professional approach and understanding of small businesses made the process seamless.",
             rating: 5,
-            avatar: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?auto=format&fit=crop&q=80&w=150"
+            avatar: "https://images.unsplash.com/photo-1650004089007-6f83c6d56e52?q=80&w=1287&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
         }
     ];
 
